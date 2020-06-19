@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+
+    <!-- script valida -->
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand font-weight-bold" href="index.html">Health Track</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="dashboard.html"><i class="fa fa-check" aria-hidden="true"></i> Status</a>
+                <a class="nav-item nav-link" href="perfil.html"><i class="fa fa-registered" aria-hidden="true"></i> Perfil</a>
+                <a class="nav-item nav-link" href="index.html"><i class="fa fa-user" aria-hidden="true"></i> Sair</a>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center p-3 mt-5 titulo-pagina">
+        <h1 class="font-weight-light">Status</h1>
+    </header>
+
+    <main>
+        <div id="fundo-externo">
+            <div id="fundo">
+                <img src="./images/Usain.jpg" alt="" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form action="" class="cadastro-form-1">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span>
+                            <h4>
+                                Luciano
+                            </h4>
+                            <span>
+                                30 anos
+                            </span>
+                            </span>
+                        </div>
+
+                        <div>
+                            <ol class="imc-bar mt-5">
+                                <li><span>5</span></li>
+                                <li><span>10</span></li>
+                                <li><span>15</span></li>
+                                <li class="active"><span>24,85</span></li>
+                                <li><span>25</span></li>
+                                <li><span>30</span></li>
+                                <li><span>35</span></li>
+                                <li><span>40</span></li>
+                                <li><span>45</span></li>
+                                <li><span>50</span></li>
+                            </ol>
+                            <div class="text-center mt-2">
+                                Peso ideal
+                            </div>
+                        </div>
+
+                        <ul class="nav flex-column mt-4">
+                            <li>
+                                <a href="#" title="Ver alimentação" class="nav-link d-flex align-items-center justify-content-between py-3">
+                                    <i class="fa fa-utensils mr-3 fa-2x"></i> Café da manhã ● Hoje às 08h30 <i class="fa fa-angle-right ml-3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Ver atividades físicas" class="nav-link d-flex align-items-center justify-content-between py-3">
+                                    <i class="fa fa-walking mr-3 fa-2x"></i> Academia ● Ontem às 197h00 <i class="fa fa-angle-right ml-3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Ver peso" class="nav-link d-flex align-items-center justify-content-between py-3">
+                                    <i class="fa fa-weight mr-3 fa-2x"></i> 80kg ● 28 de maio de 2020 ● -0,25kg <i class="fa fa-angle-right ml-3"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Ver pressão arterial" class="nav-link d-flex align-items-center justify-content-between py-3">
+                                    <i class="fa fa-ruler-horizontal mr-3 fa-2x"></i> 125/82 mmHg ● 28 de maio de 2020 ● Normal <i class="fa fa-angle-right ml-3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

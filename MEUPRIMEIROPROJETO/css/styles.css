@@ -1,0 +1,105 @@
+#fundo-externo {
+    overflow: hidden;
+    /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* criamos um contexto para posicionamento */
+}
+
+#fundo {
+    position: fixed;
+    /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
+}
+
+#fundo img {
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.logo {
+    width: 10%;
+}
+
+.login-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.login-logo {
+    position: relative;
+    margin-left: -41.5%;
+}
+
+.login-logo img {
+    position: absolute;
+    width: 20%;
+    margin-top: 19%;
+    background: #5c5e5d;
+    border-radius: 4.5rem;
+    padding: 5%;
+}
+
+.login-form-1 {
+    padding: 9%;
+    background: #7e7e7e;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-form-1 h3 {
+    text-align: center;
+    margin-bottom: 12%;
+    color: #fff;
+}
+
+.cadastro-form-1 {
+    padding: 9%;
+    background: #ffffff;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.titulo-pagina {
+    background: #5c5e5d;
+    color: #fff;
+}
+
+.letra-branco {
+    color: #fff;
+}
+
+.imc-bar {
+    background: -moz-linear-gradient(right, #00C2FF, #7443FF, #ff0000);
+    background: -webkit-linear-gradient(right, #00C2FF, #7443FF, #ff0000);
+    background: linear-gradient(to right, #00C2FF, #7443FF, #ff0000);
+    height: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+}
+
+.imc-bar li span {
+    display: none;
+}
+
+.imc-bar li.active span {
+    display: block;
+    bottom: 25px;
+    justify-content: center;
+    position: relative;
+    right: 15px;
+}
+
+.imc-bar li.active {
+    background-color: #CFD2FF;
+    width: 5px;
+    height: 16px;
+    position: relative;
+    bottom: 4px;
+    border-radius: 25%;
+}
